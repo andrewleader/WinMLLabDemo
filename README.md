@@ -52,6 +52,10 @@ public static async Task InitializeWinMLEPsAsync()
 
 With that method implemented, save your changes (`Ctrl+S`) and then press the **Hot Reload** button (or `Alt+F10`).
 
+<img width="135" height="49" alt="image" src="https://github.com/user-attachments/assets/ff0bb80e-f133-4a23-b899-672e69588351" />
+
+> If you get a hot reload error about "Value cannot be null. (Parameter 'key')", click "Edit" then try adding the first line by itself and hot reloading, and then adding the second line (or stop debugging and re-deploy).
+
 Then, switch back to the app and click the **Initialize WinML EPs** button, which will call the API we just added! Notice that a new QNN EP for NPU appeared!
 
 <img width="359" height="116" alt="image" src="https://github.com/user-attachments/assets/7c6d7342-d261-4ed0-8683-873e2cf5445c" />
