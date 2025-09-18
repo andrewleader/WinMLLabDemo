@@ -40,7 +40,7 @@ namespace WinMLLabDemo
             var catalog = ExecutionProviderCatalog.GetDefault();
 
             // Download and register all EPs
-            await catalog.EnsureAndRegisterAllAsync();
+            await catalog.EnsureAndRegisterCertifiedAsync();
         }
 
         public static string CompileModelForExecutionProvider(OrtEpDevice executionProvider)
