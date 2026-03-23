@@ -2,12 +2,13 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net8.0-windows10.0.19041.0</TargetFramework>
+    <TargetFramework>net8.0-windows10.0.18362.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
 	<RuntimeIdentifiers>win-x86;win-x64;win-arm64</RuntimeIdentifiers>
 	<WindowsPackageType>None</WindowsPackageType>
+	<Platforms>AnyCPU;ARM64;x64</Platforms>
   </PropertyGroup>
 
   <ItemGroup>
@@ -22,11 +23,6 @@
     <Content Include="SqueezeNet.onnx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.8.250916003" />
-    <PackageReference Include="System.Numerics.Tensors" Version="9.0.9" />
   </ItemGroup>
 
   <ItemGroup>
@@ -45,6 +41,12 @@
 
   <ItemGroup>
     <Compile Remove="C:\Users\aleader\.nuget\packages\microsoft.windowsappsdk.foundation\1.8.250701000-experimental\buildTransitive\..\include\MddBootstrapAutoInitializer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Windows.AI.MachineLearning" Version="2.0.295-preview" />
+    <PackageReference Include="Microsoft.WindowsAppSDK.ML" Version="2.0.295-preview" />
+    <PackageReference Include="Microsoft.WindowsAppSDK.Runtime" Version="2.0.0-preview2" />
   </ItemGroup>
 
 </Project>

@@ -2,8 +2,6 @@
 using Microsoft.ML.OnnxRuntime.Tensors;
 using Microsoft.Win32;
 using Microsoft.Windows.AI.MachineLearning;
-using Microsoft.Windows.AppNotifications;
-using Microsoft.Windows.AppNotifications.Builder;
 using System;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
